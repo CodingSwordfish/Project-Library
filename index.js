@@ -7,8 +7,10 @@ const authorInput = document.getElementById('author');
 const pagesInput = document.getElementById('pages');
 const readCheckbox = document.getElementById('read');
 
-newBookButton.addEventListener('click', () => {
+newBookButton.addEventListener('click', (e) => {
+ 
   newBookForm.classList.toggle('hidden');
+  
 });
 
 // Initially hide the form

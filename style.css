@@ -78,10 +78,13 @@ h6 {
   margin-top: 5vh;
   font-weight: bold;
 }
-
+.newBookButton:focus {
+    outline: 2px solid aqua;
+}
 .newBookButton:hover {
   background-color: #0062cc;
 }
+
 
 .button-div {
   display: flex;
@@ -124,9 +127,12 @@ h6 {
   
   label {
     font-weight: bold;
-    margin-right: 10px;
+    margin: 0 auto;
+    text-align: center;
   }
   
+
+ 
   input[type="text"],
   input[type="number"] {
     padding: 8px;
@@ -135,9 +141,35 @@ h6 {
   }
   
   input[type="checkbox"] {
-    margin-right: 5px; 
-  
-   
+    appearance: none;
+    background-color: #fff;
+    margin: 0 auto;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border:1px solid blue;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  }
+
+  input[type="checkbox"]:focus{
+outline: 1px solid aqua;
+  }
+
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em blue;
+  }
+
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
   }
   
   button[type="submit"] {
