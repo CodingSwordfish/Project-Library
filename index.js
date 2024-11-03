@@ -4,7 +4,7 @@ const newBookButton = document.querySelector(".newBookButton");
 const newBookForm = document.getElementById("new-book-form");
 const submitButton = document.getElementById("form-submit-button");
 let renderDivCont = document.querySelector(".renderdiv");
-
+let bookTitle = document.querySelector(".titleBook");
 const myLibrary = [];
 
 function Book(title, author, pages, read) {
@@ -68,10 +68,24 @@ newBookForm.classList.add("hidden");
 
 newBookButton.addEventListener("click", (e) => {
   newBookForm.classList.toggle("hidden");
+
+  const titleInput = document.getElementById('title');
+  const authorInput = document.getElementById('author');
+  const 
+ pagesInput = document.getElementById('pages');
+  const readCheckbox = document.getElementById('read'); 
+
+
+  titleInput.value = '';
+  authorInput.value = '';
+  pagesInput.value = '';
+  readCheckbox.checked = false;
+
 });
 
 submitButton.addEventListener("click", (e) => {
   addBookToLibrary();
   e.preventDefault();
+
   newBookForm.classList.toggle("hidden");
 });
