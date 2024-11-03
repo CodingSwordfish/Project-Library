@@ -79,12 +79,11 @@ h6 {
   font-weight: bold;
 }
 .newBookButton:focus {
-    outline: 2px solid aqua;
+  outline: 2px solid aqua;
 }
 .newBookButton:hover {
   background-color: #0062cc;
 }
-
 
 .button-div {
   display: flex;
@@ -92,108 +91,161 @@ h6 {
 }
 
 .form-center-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .form-center-div div {
-    margin: 10px 0;
-  }
-  
-  .form-center-div label,
-  .form-center-div input {
-    display: block;
-    margin-bottom: 5px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.form-center-div div {
+  margin: 10px 0;
+}
+
+.form-center-div label,
+.form-center-div input {
+  display: block;
+  margin-bottom: 5px;
+}
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 #new-book-form {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
- 
-  
-  .form-center-div div {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    font-weight: bold;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
- 
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 
- 
-  input[type="text"],
-  input[type="number"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 400px;
-  }
+.form-center-div div {
+  margin-bottom: 15px;
+}
 
-  input[type="text"]:focus {
-    outline: 1px solid aqua;
-  }
+label {
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  input[type="number"]:focus {
-    outline: 1px solid aqua;
-  }
-  
-  
-  input[type="checkbox"] {
-    appearance: none;
-    background-color: #fff;
-    margin: 0 auto;
-    font: inherit;
-    
-    width: 1.15em;
-    height: 1.15em;
-    border:1px solid blue;
-    border-radius: 0.15em;
-    transform: translateY(-0.075em);
-    display: grid;
-    place-content: center;
-  }
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+}
 
-  input[type="checkbox"]:focus{
-outline: 1px solid aqua;
-  }
+input[type="text"]:focus {
+  outline: 1px solid aqua;
+}
 
-  input[type="checkbox"]::before {
-    content: "";
-    width: 0.65em;
-    height: 0.65em;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em blue;
-  }
+input[type="number"]:focus {
+  outline: 1px solid aqua;
+}
 
-  input[type="checkbox"]:checked::before {
-    transform: scale(1);
-  }
-  
-  button[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-   
-  }
-  
-  button[type="submit"]:hover {
-    background-color: 
-   #0062cc;
-  }
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0 auto;
+  font: inherit;
+
+  width: 1.15em;
+  height: 1.15em;
+  border: 1px solid blue;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]:focus {
+  outline: 1px solid aqua;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em blue;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+
+
+.renderdiv {
+  display: flex; /* Allow cards to flex horizontally if needed */
+  flex-wrap: wrap; /* Wrap cards to the next line on smaller screens */
+  margin: 20px auto; /* Add margin for better spacing */
+  width: fit-content; /* Adjust container width based on content */
+}
+
+.renderDiv {
+  width: 300px; /* Set a preferred card width */
+  background-color: #f5f5f5; /* Light background color */
+  border: 1px solid #ddd; /* Border for card definition */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 10px; /* Spacing between cards */
+  padding: 20px; /* Padding for content within the card */
+  text-align: left; /* Left-align content */
+}
+
+.bookTitle, .author, .bookPages, .readOrNot {
+  margin-bottom: 5px; /* Spacing between content items */
+}
+
+.bookTitle {
+  font-size: 18px; /* Larger font for titles */
+  font-weight: bold; /* Bold titles for emphasis */
+}
+
+.author, .bookPages, .readOrNot {
+  font-size: 16px; /* Smaller font for other details */
+}
+
+.remButton {
+  background-color: #007bff; /* Button background color */
+  border: none; /* Remove default border */
+  padding: 5px 10px; /* Button padding */
+  border-radius: 3px; /* Rounded corners for the button */
+  /* Change cursor to indicate interactivity */
+}
+
+.remButton:hover {
+  background-color: #ddd; /* Button hover effect (lighter color) */
+}
+
+
+.renderDiv h2 {
+  color: #333; /* Title color */
+}
+
+.renderDiv h3, .renderDiv p {
+  color: #666; /* Author, pages, and status color */
+}
+
+.read {
+  color: #007bff; /* Color for "Read" status */
+}
+
+.not-read {
+  color: #ff0000; /* Color for "Not Read" status */
+}
