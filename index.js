@@ -1,5 +1,12 @@
 let log = console.log;
 
+const newBookButton = document.querySelector('.newBookButton');
+const newBookForm = document.getElementById('new-book-form');
+const titleInput = document.getElementById('title');
+const authorInput = document.getElementById('author');
+const pagesInput = document.getElementById('pages');
+const readCheckbox = document.getElementById('read');
+
 
 const myLibrary = [];
 
