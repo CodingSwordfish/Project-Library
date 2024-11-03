@@ -131,6 +131,7 @@ h6 {
     text-align: center;
   }
   
+ 
 
  
   input[type="text"],
@@ -138,14 +139,24 @@ h6 {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 400px;
   }
+
+  input[type="text"]:focus {
+    outline: 1px solid aqua;
+  }
+
+  input[type="number"]:focus {
+    outline: 1px solid aqua;
+  }
+  
   
   input[type="checkbox"] {
     appearance: none;
     background-color: #fff;
     margin: 0 auto;
     font: inherit;
-    color: currentColor;
+    
     width: 1.15em;
     height: 1.15em;
     border:1px solid blue;
