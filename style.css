@@ -195,6 +195,7 @@ button[type="submit"]:hover {
   flex-wrap: wrap; /* Wrap cards to the next line on smaller screens */
   margin: 20px auto; /* Add margin for better spacing */
   width: fit-content; /* Adjust container width based on content */
+  width: -moz-fit-content;
 }
 
 .renderDiv {
@@ -233,6 +234,18 @@ button[type="submit"]:hover {
   background-color: #ddd; /* Button hover effect (lighter color) */
 }
 
+.readtogglebutton {
+  background-color:#ddd; /* Button background color */
+  border: none; /* Remove default border */
+  padding: 5px 10px; /* Button padding */
+  border-radius: 3px; /* Rounded corners for the button */
+  /* Change cursor to indicate interactivity */
+}
+
+.readtogglebutton:hover {
+  background-color: black; 
+  
+}
 
 .renderDiv h2 {
   color: #333; /* Title color */
@@ -242,8 +255,8 @@ button[type="submit"]:hover {
   color: #666; /* Author, pages, and status color */
 }
 
-.read {
-  color: #007bff; /* Color for "Read" status */
+.yesRead {
+  color: blue; /* Color for "Read" status */
 }
 
 .not-read {
